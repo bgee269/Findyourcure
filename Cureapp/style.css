@@ -1,0 +1,46 @@
+body {
+    background-color: lightgreen;
+    
+    }
+    
+
+
+    
+    header { 
+    position: static;
+    
+    }
+
+
+    .container {
+    color:black;   
+    width: 100%;
+    }
+
+    .form-group {
+        width: 80%;
+        padding-left: 20%;
+
+    }
+
+    .h1 {
+        float: right;
+    }
+
+    
+    @media screen and (max-width: 980px){
+        #container{
+            width: 100%;
+    }
+
+    @media screen and (max-width: 768px){
+
+}
+
+    @media screen and (max-width: 640px){
+
+
+
+}
+    }
+    
