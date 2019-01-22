@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device=width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
     <header>
+            <video autoplay muted loop id="myVideo">
+                    <source src="clouds_scrolling.mp4" type="video/mp4">
+                  </video>
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">C</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -21,7 +26,13 @@
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://curepenn.com/">Link</a>
+                        <a class="nav-link" href="https://curepenn.com/">Cure.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.phillymag.com/news/2018/10/23/pennsylvania-medical-marijuana-doctors/">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.pa.gov/guides/pennsylvania-medical-marijuana-program/">Obtain a Card</a>
                     </li>
             </div>
             </li>
@@ -29,15 +40,18 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                 </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="contact.html" role="tab" aria-controls="contact"
+                        aria-selected="false">Find my Cure</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="portfolio.html" role="tab"
                         aria-controls="profile" aria-selected="false">Products</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="contact.html" role="tab" aria-controls="contact"
-                        aria-selected="false">Contact</a>
-                </li>
             </ul>
+
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
@@ -55,26 +69,39 @@
 
         <div class="row1">
             <div class="col-md-12">
-                <h1>Find Your Cure!</h1>
-                <img style="float:left" src="cure2.png">
+               
+                <img style="float:left" src="1541700115-CURE_full-logo_penn_black.png">
 
                 <p>
-                        More states are passing laws that allow people to use medical marijuana. So what does it treat, and who can and should use it?
+                        
+                    
+                        Under the law, Pennsylvania residents who have a serious medical condition as certified by an approved physician are considered medical marijuana patients. Patients register for an ID card and use that card to obtain medical marijuana at Pennsylvania dispensaries. Caregivers also are Pennsylvania residents and are designated by patients  to deliver medical marijuana to them, obtained at a Pennsylvania dispensary. Caregivers register for an ID card and must complete a background check.  
 
-                        Pain is the main reason people ask for a prescription, says Barth Wilsey, MD, a pain medicine specialist at the University of California Davis Medical Center. It could be from headaches, a disease like cancer, or a long-term condition, like glaucoma or nerve pain.
-                        
-                        If you live in a state where medical marijuana is legal and your doctor thinks it would help, you’ll get a “marijuana card.” You will be put on a list that allows you to buy marijuana from an authorized seller, called a dispensary.
-                        
+                    In Pennsylvania, approved forms of medical marijuana include:
+                    
+                    Pill;
+                    Oil;
+                    Topical forms, including gel, creams, or ointments;
+                    Tincture;
+                    Liquid; and
+                    A form medically appropriate for administration by vaporization or nebulization, including dry leaf or plant form for administration by vaporization.
 
                         
-                        - Web MD                        
+
+
+                        -PA Department of Health                      
                 </p>
             </div>
         <br>
         </div>
 
+        <div class="row2">
+            <div class="col-md-12">
+                
+                <img src="CURE_full-logo_penn_white-1.png"></img>
+
         <div class="col-md-12">
-            <div class="row2">
+            <div class="row3">
                 <div class="card">
                     <div class="card-header">
                         Quote
@@ -93,5 +120,5 @@
     </div>
 
 </body>
-
+<script src="cure.js"></script>
 </html>
