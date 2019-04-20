@@ -5,9 +5,11 @@
     <title>Find Your Cure</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device=width, initial-scale=1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -44,6 +46,8 @@
             </div>
         </nav>
         
+        <div class="container1">
+
     <!-- Button names -->
         <button button class="button" onclick="myFunction1()">Autism</button>
         <button button class="button2 "onclick="myFunction2()">Cancer</button>
@@ -54,7 +58,6 @@
         <button button class="button7 "onclick="myFunction7()">Chronic Pain</button>
         <button button class="button8 "onclick="myFunction8()">PTSD</button>
         <button button class="button9 "onclick="myFunction9()">Neuropathy</button>
-        <button button class="button10 "onclick="myFunction10()">Opiod use Disorder</button>
         <button button class="button11 "onclick="myFunction11()">Terminal Illness</button>
         
         
@@ -76,17 +79,15 @@
 
         <p id="Neuropathy"></p>
 
-        <p id="Opiod"></p>
-
         <p id="Terminal Illness"></p>
 
-        
-        <!-- Button functions -->
+        </div>
+        <!-- Button functions Add an HREF to each element-->
         
         <script>
 
         function myFunction1() {
-          document.getElementById("Autism").innerHTML = "Blue Dream, Green Crack, Sour Diesel, Northern Lights, The Wife, Soothe Tincture, Hope Tincture, Harle-TSU Cartridge, Relax Capsules.  ";
+          document.getElementById("Autism").innerHTML = "Blue Dream , Green Crack, Sour Diesel, Northern Lights, The Wife, Soothe Tincture, Hope Tincture, Harle-TSU Cartridge, Relax Capsules.  ";
         }
 
         function myFunction2() {
@@ -102,7 +103,7 @@
         }
 
         function myFunction5() {
-          document.getElementById("Glaucoma").innerHTML = "Blueberry, Maui Waui, Jack Herer, Sour Grape, Durban Poison, Sour Diesel.";
+          document.getElementById("Glaucoma").innerHTML = "<a href='https://www.leafly.com/indica/blueberry'>Blueberry</a>, Maui Waui, Jack Herer, Sour Grape, Durban Poison, Sour Diesel.";
         }
 
         function myFunction6() {
@@ -121,10 +122,7 @@
           document.getElementById("Neuropathy").innerHTML = "Super Silver Haze, Jack Herer";
         }
 
-        function myFunction10() {
-          document.getElementById("Opiod").innerHTML = "707 Headband, Bio Jesus, LA Biker, Great divide, Big 91, Double Afghan Chunk, GG4, Chem de la chem, Louie XIII, OG Kush, GDP, Long Peak's Blue, Northern Lights, Soothe Tincture, Dream Tincture";
-        }
-
+       
         function myFunction11() {
           document.getElementById("Terminal Illness").innerHTML = "ACDC, Harlequin, Harle-Tsu, Sour Diesel, Sunset Sherbet, GG4, LA Biker, GSC, Blue Dream, Great Divide, Sour Grape, Chem de la chem, GDP, Tangie, Purple Haze, 9a99, Soothe tincture, Dream Tincture";
         }
@@ -134,11 +132,106 @@
 
         
         </script>
-    
+        
+        <br>
+
+        <br>
+
+        <br>
+
+    <div class="container2">
+
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2">
+          <p class="cool-font">Ailment</p>
+          <input class="form-control" type="text" id="author" placeholder="What do you suffer from?">
+          <br>
+          <p class="cool-font">Item</p>
+          <textarea class="form-control" rows="3" id="chirp-box" placeholder="Enter Item Here!"></textarea>
+          <button id="wish-submit" class="btn btn-lg pull-right">Submit!</button>
+        </div>
+      </div>
+    </div>
+
+<br>
+
+      <div class="row2">
+        <div class="col-sm-2 col-sm-offset-4">
+            <h2>Works for me</h2>
+          <hr>
+          <div id="chirp-area"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <style>
+      body  {
+        background: url(https://ultrahydrophobiccoating.com/wp-content/uploads/2016/08/img4-wtoutiao-com111.gif) no-repeat center center fixed; 
+        background-size: cover;
+      }
+
+      .chirp {
+  padding: 10px;
+  margin: 10px;
+  background-color: lightgreen;
+}
+
+.cool-font {
+  font-family: Shrikhand, cursive;
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.jumbotron {
+  font-family: Shrikhand, cursive;
+  color: white;
+  background-color: #4caf50;
+}
+
+input,
+textarea {
+  margin: 20px;
+}
+
+.btn {
+  margin: 10px;
+  font-family: Shrikhand, cursive;
+  color: #4caf50;
+  background-color: white;
+  border-color: #4caf50;
+  border-style: solid;
+  border-width: 2px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: Shrikhand, cursive;
+  font-size: 35px;
+  color: #4caf50;
+}
+
+
+.container1 {
+  margin: auto;
+  width: 90%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+
+
+
+      </style>
+
 </body>
 
 
-
+<script src ="./wish.js"></script>
 </html>
 
 
