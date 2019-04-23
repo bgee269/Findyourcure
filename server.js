@@ -38,8 +38,8 @@ app.use(express.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-//require("./routes/apiRoutes")(app);
-//require("./routes/htmlRoutes")(app);
+require("./routes/api-routes")(app);
+//require("./app/config/connection")(app);
 
 // =============================================================================
 // LISTENER
@@ -91,4 +91,8 @@ app.listen(PORT, function() {
   // If no matching route is found default to home
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
+  });
+
+  app.get("/signin", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/signin.html"));
   });
