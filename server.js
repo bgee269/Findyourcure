@@ -85,7 +85,7 @@ app.listen(PORT, function() {
   });
 
   app.get("/portfolio", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/porfolio.html"));
+    res.sendFile(path.join(__dirname, "../public/portfolio.html"));
   });
 
   // If no matching route is found default to home
