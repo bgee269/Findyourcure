@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //var mysql = require("mysql");
 //require('dotenv').config();
 //var connection = mysql.createConnection("mysql://dvi6ll60oa36r1r9:dzbue5r1ffr917p3@bbj31ma8tye2kagi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ogb3reih9ah9fyrn");
@@ -14,21 +14,6 @@ var sequelize = new Sequelize("sequelize_chirpy1", "root", "", {
     idle: 10000
   }
 });
-=======
-var mysql = require("mysql");
-require('dotenv').config();
-var connection = mysql.createConnection(process.env.JAWSDB_URL);
-
-
-// Set up our connection information
-// var connection = mysql.createConnection({
-//   port: 3306,
-//   hostname: "bbj31ma8tye2kagi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-//   username: "dvi6ll60oa36r1r9",
-//   password: "dzbue5r1ffr917p3",
-//   database: "ogb3reih9ah9fyrn"
-// });
->>>>>>> 5a0cf2dc2f2dc7b138f4309ae12b9d60765c39c0
 
 module.exports = sequelize;
 // Set up our connection information
