@@ -3,11 +3,15 @@ var mysql = require("mysql");
 // Set up our connection information
 var connection = mysql.createConnection({
   port: 3306,
+<<<<<<< HEAD
   host: "bbj31ma8tye2kagi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   user: "dvi6ll60oa36r1r9",
   password: "dzbue5r1ffr917p3",
   database: "ogb3reih9ah9fyrn"
 });
+=======
+
+>>>>>>> 5a0cf2dc2f2dc7b138f4309ae12b9d60765c39c0
 
 // Connect to the database
 connection.connect(function(err) {
