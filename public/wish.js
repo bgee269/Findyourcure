@@ -27,8 +27,7 @@ $.get("/api/all", function(data) {
     // Make a newChirp object
     var newChirp = {
       author: $("#author").val().trim(),
-      body: $("#chirp-box").val().trim(),
-      created_at: moment().format("YYYY-MM-DD HH:mm:ss")
+      body: $("#chirp-box").val().trim()
     };
   
     console.log(newChirp);

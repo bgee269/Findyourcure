@@ -4,15 +4,14 @@
 //var connection = mysql.createConnection("mysql://dvi6ll60oa36r1r9:dzbue5r1ffr917p3@bbj31ma8tye2kagi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ogb3reih9ah9fyrn");
 var Sequelize = require("sequelize");
 
-var sequelize = new Sequelize("sequelize_chirpy1", "root", "", {
+var sequelize = new Sequelize("ogb3reih9ah9fyrn", "dvi6ll60oa36r1r9", "dzbue5r1ffr917p3", {
   host: "bbj31ma8tye2kagi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
   dialect: "mysql",
-  pool: {
-    max: 5,
-    min: 0,
-    idle: 10000
-  }
+  define: {
+    timestamps: false
+}
+ 
 });
 
 module.exports = sequelize;
